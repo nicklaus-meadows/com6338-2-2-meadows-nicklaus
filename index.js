@@ -13,14 +13,15 @@ function greet() {
             alert('Please tell us your age.')
         }
         
-            let birthdayYet = confirm('You have had a birthday this year already?')
+            let birthdayYet = confirm(user + ' have you had a birthday this year already?')
             if (birthdayYet) {
-                console.log("hit ok")
+                
+                alert(new Date().getFullYear() - age)
             } else {
-                console.log('hit cancel')
+                
+                alert(new Date().getFullYear() - age - 1)
             }
 
 }
     greet()
 
-    
